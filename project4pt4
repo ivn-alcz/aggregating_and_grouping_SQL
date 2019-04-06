@@ -1,0 +1,12 @@
+SELECT
+	*
+FROM
+	trips;
+
+SELECT
+	end_station,
+	AVG (duration) AS avg_duration
+FROM
+	trips
+GROUP BY
+	end_station;
